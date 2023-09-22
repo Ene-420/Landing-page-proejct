@@ -1,14 +1,18 @@
 body{
     margin: 0;
     min-height: 100vh;
+    width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
+    /* width: 90%; */
     min-height: 100vh;
+    
     /* max-height: 100vh; */
 }
 
@@ -16,7 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     gap: 24px;
 
     
@@ -29,7 +33,7 @@ body{
 .container-header-item{
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 10px auto;
     font-size: 24px;
     color: #F9FAF8;
     
@@ -48,13 +52,16 @@ body{
 
 .container-header-body{
     display: flex;
-    margin: 10px auto;
+    margin: 30px auto;
     margin-bottom: 40px;
     justify-content: center;
     padding: 8px;
     gap: 8px;
 }
 
+.container-header-item, .container-header-body{
+    width: 70%;
+}
 .body-text{
     /* padding: 12px; */
     font-size: 18px;
@@ -73,12 +80,13 @@ body{
     margin-top: 8px;
     padding: 5px 12px;
     border-radius: 8px;
-    background-color: blue;
+    border-color: white;
+    background-color: #3882F6;
 }
 
 
 .header-image {
-    width: 550px;
+    width: 850px;
     height: auto;
     background-color: gray;
     color: white;
@@ -93,4 +101,118 @@ body{
     display: flex;
     flex-direction: column;
     flex: 1;
+}
+
+.container-body-main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-objects{
+    display: flex;
+    justify-content:  space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10p;
+}
+
+.main-text{
+    margin: 15px auto;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.card{
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    margin: 0 auto;
+    border: 4px blue solid;
+    border-radius: 8px;
+}
+
+.main-objects-content{
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.text{
+    width: 100px;
+    text-align: center;
+}
+
+.container-body-extra{
+    background-color: #E5E7EB;
+    padding: 30px;
+}
+
+.extra-body{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 36px;
+    padding: 15px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.extra-body .author{
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: bold;
+
+}
+
+.container-body-button{
+    
+    padding: 40px;
+    margin: 30px auto;
+    width: 75%;
+    
+}
+
+.button-body{
+    
+    margin: 0 auto;
+    padding: 25px 35px;
+    background-color: #3882F6;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-body button{
+    padding:4px 12px ;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.button-header{
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+.button-message{
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.footer{
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    color: #F9FAF8;
+    align-self: center;
+    justify-content: center;
 }
